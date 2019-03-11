@@ -8,8 +8,13 @@ cmake \
   -DCODA_BUILD_PYTHON=True \
   -DCODA_WITH_HDF4=True \
   -DCODA_WITH_HDF5=True \
+  -DJPEG_INCLUDE_DIR="$PREFIX/include" \
   -DHDF4_INCLUDE_DIR="$PREFIX/include" \
-  -DHDF5_INCLUDE_DIR="$PREFIX/include"
+  -DHDF5_INCLUDE_DIR="$PREFIX/include" \
+  -DJPEG_LIBRARY_DIR="$PREFIX/lib" \
+  -DHDF4_LIBRARY_DIR="$PREFIX/lib" \
+  -DHDF5_LIBRARY_DIR="$PREFIX/lib" \
+  -DZLIB_LIBRARY_DIR="$PREFIX/lib"
 
 make VERBOSE=1
 make install
