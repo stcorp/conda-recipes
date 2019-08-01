@@ -26,7 +26,7 @@ requirements:
     - hdf4
     - hdf5
     - jpeg
-    - R
+    - r-base
 
   run:
     - coda
