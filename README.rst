@@ -22,6 +22,8 @@ Packages need to be build locally on each of the supported platforms (usually ``
 
 The `anaconda-client` is only needed of you use Miniconda and don't want the full Anaconda environment. The Anaconda client is needed to upload packages to anaconda.org.
 
+When building on macos you may have to install the necessary `MacOSX SDK <https://github.com/phracker/MacOSX-SDKs>`_ in /opt first. This is because the R dependency requires using the conda-forge version of compilers that use a CONDA_BUILD_SYSROOT setting that points to an SDK in /opt.
+
 Make sure you add the ``stcorp`` channel before building:
 
 .. code-block:: bash
