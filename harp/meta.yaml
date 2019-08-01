@@ -1,5 +1,5 @@
-{% set version = "1.7" %}
-{% set sha256 = "df112b687e86bd13920dc83e3f52af627fd7036d56ef4b50a849ccad493d348b" %}
+{% set version = "1.8" %}
+{% set sha256 = "3b0d504aab1e843c33017c0eee9a816dbbf2759b8215eb9a33008fcebabf9a61" %}
 {% set tag = version %}
 
 package:
@@ -26,6 +26,7 @@ requirements:
     - hdf4
     - hdf5
     - jpeg
+    - R
 
   run:
     - coda

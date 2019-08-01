@@ -6,6 +6,7 @@ export M4="$(command -v m4)"
 cmake \
   -DCMAKE_INSTALL_PREFIX="$PREFIX" \
   -DHARP_BUILD_PYTHON=True \
+  -DHARP_BUILD_R=True \
   -DJPEG_INCLUDE_DIR="$PREFIX/include" \
   -DHDF4_INCLUDE_DIR="$PREFIX/include" \
   -DHDF5_INCLUDE_DIR="$PREFIX/include" \
