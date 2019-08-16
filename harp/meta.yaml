@@ -11,6 +11,10 @@ source:
   url: https://github.com/stcorp/harp/releases/download/{{ tag }}/harp-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
+build:
+  script_env:
+    - SDKROOT  # [osx]
+
 requirements:
   build:
     - cmake

@@ -5,6 +5,7 @@ export M4="$(command -v m4)"
 
 cmake \
   -DCMAKE_INSTALL_PREFIX="$PREFIX" \
+  -DCMAKE_OSX_SYSROOT=${SDKROOT} \
   -DHARP_BUILD_PYTHON=True \
   -DHARP_BUILD_R=True \
   -DCODA_INCLUDE_DIR="$PREFIX/include" \
