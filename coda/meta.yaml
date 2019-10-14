@@ -7,7 +7,6 @@ package:
   version: {{ version }} 
 
 source:
-  fn : coda-{{ version }}.tar.gz
   url: https://github.com/stcorp/coda/releases/download/{{ tag }}/coda-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 

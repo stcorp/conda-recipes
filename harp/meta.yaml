@@ -7,7 +7,6 @@ package:
   version: {{ version }} 
 
 source:
-  fn : harp-{{ version }}.tar.gz
   url: https://github.com/stcorp/harp/releases/download/{{ tag }}/harp-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
