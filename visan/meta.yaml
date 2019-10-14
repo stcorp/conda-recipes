@@ -1,0 +1,37 @@
+{% set version = "4.0b" %}
+{% set sha256 = "8174d6ef728f6840c51950cea4dc3e02780394e1088e38b547ed62e52634c88b" %}
+{% set tag = "db51a5e6875981091ea5d7d8321b3e4ed0e1b75d" %}
+
+package:
+  name: visan
+  version: {{ version }} 
+
+source:
+  url: https://github.com/stcorp/visan/archive/{{ tag }}.zip
+  sha256: {{ sha256 }}
+
+build:
+  script_env:
+    - SDKROOT  # [osx]
+
+requirements:
+  build:
+    - cmake
+    - python
+    - vtk
+    - tbb-devel
+    - gcc_linux-64  # [linux]
+    - gxx_linux-64  # [linux]
+
+  run:
+    - coda
+    - python
+    - numpy
+    - harp
+    - vtk
+    - wxpython
+
+about:
+  home: https://github.com/stcorp/visan
+  license: BSD
+  license_file: COPYING
