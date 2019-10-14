@@ -10,6 +10,11 @@ source:
   url: https://github.com/stcorp/visan/archive/{{ tag }}.zip
   sha256: {{ sha256 }}
 
+app:
+  entry: visan
+  icon: icon_64x64.png
+  summary: "Visualization and Analysis application from the Atmospheric Toolbox"
+
 build:
   script_env:
     - SDKROOT  # [osx]
