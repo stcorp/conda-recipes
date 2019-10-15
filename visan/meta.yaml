@@ -12,8 +12,8 @@ source:
 
 app:
   entry: visan
-  icon: icon_64x64.png
-  summary: "Visualization and Analysis application from the Atmospheric Toolbox"
+  icon: logo.png
+  summary: Visualization and Analysis application of the Atmospheric Toolbox
 
 build:
   script_env:
