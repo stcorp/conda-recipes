@@ -1,8 +1,5 @@
 export CMAKE_LIBRARY_PATH=$PREFIX/lib
 
-set
-env
-
 if test $BUILD == "x86_64-conda_cos6-linux-gnu" ; then
   # Patch the invalid paths to X libraries in VTKTargets.cmake
   sed -i -e "s:/tmp/build/[^\/]*/vtk_[^\/]*/_build_env/x86_64-conda_cos6-linux-gnu/sysroot/usr/lib64/lib\([^\.]*\).so:\1:g" "$PREFIX/lib/cmake/vtk-8.2/VTKTargets.cmake"
