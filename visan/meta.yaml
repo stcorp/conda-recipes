@@ -30,7 +30,7 @@ requirements:
     - libice-devel-cos6-x86_64  # [linux]
     - libselinux-cos6-x86_64  # [linux]
     - libsm-devel-cos6-x86_64  # [linux]
-    - libuuid-cos6-x86_64  # [linux]
+    - libuuid-devel-cos6-x86_64  # [linux]
     - libx11-devel-cos6-x86_64  # [linux]
     - libxau-cos6-x86_64  # [linux]
     - libxdamage-cos6-x86_64  # [linux]
