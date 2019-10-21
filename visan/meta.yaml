@@ -33,6 +33,7 @@ requirements:
     - libuuid-devel-cos6-x86_64  # [linux]
     - libx11-devel-cos6-x86_64  # [linux]
     - libxau-cos6-x86_64  # [linux]
+    - libxcb-cos6-x86_64  # [linux]
     - libxdamage-cos6-x86_64  # [linux]
     - libxext-cos6-x86_64  # [linux]
     - libxfixes-cos6-x86_64  # [linux]
