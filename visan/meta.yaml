@@ -1,6 +1,6 @@
 {% set version = "4.0b" %}
-{% set sha256 = "8174d6ef728f6840c51950cea4dc3e02780394e1088e38b547ed62e52634c88b" %}
-{% set tag = "db51a5e6875981091ea5d7d8321b3e4ed0e1b75d" %}
+{% set sha256 = "4146bfcddbf3a5ec667c16174c8485d6334cf529fc7b815ac0e203309dd151a8" %}
+{% set tag = "8b2914b4aca952b228e1951dec60aab7cf73db37" %}
 
 package:
   name: visan
@@ -27,6 +27,19 @@ requirements:
     - tbb-devel
     - gcc_linux-64  # [linux]
     - gxx_linux-64  # [linux]
+    - libice-devel-cos6-x86_64  # [linux]
+    - libselinux-cos6-x86_64  # [linux]
+    - libsm-devel-cos6-x86_64  # [linux]
+    - libuuid-cos6-x86_64  # [linux]
+    - libx11-devel-cos6-x86_64  # [linux]
+    - libxau-cos6-x86_64  # [linux]
+    - libxdamage-cos6-x86_64  # [linux]
+    - libxext-cos6-x86_64  # [linux]
+    - libxfixes-cos6-x86_64  # [linux]
+    - libxt-devel-cos6-x86_64  # [linux]
+    - libxxf86vm-cos6-x86_64  # [linux]
+    - mesa-dri-drivers-cos6-x86_64  # [linux]
+    - mesa-libgl-devel-cos6-x86_64  # [linux]
 
   run:
     - coda
