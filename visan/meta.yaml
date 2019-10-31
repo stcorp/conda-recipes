@@ -1,6 +1,6 @@
-{% set version = "4.0b" %}
-{% set sha256 = "4146bfcddbf3a5ec667c16174c8485d6334cf529fc7b815ac0e203309dd151a8" %}
-{% set tag = "8b2914b4aca952b228e1951dec60aab7cf73db37" %}
+{% set version = "4.0" %}
+{% set sha256 = "e0352627077a60a03b570fb6d0456a0baeecfd5db3c53f3ebf70bb6e4597c3af" %}
+{% set tag = version %}
 
 package:
   name: visan
