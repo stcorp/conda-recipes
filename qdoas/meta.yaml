@@ -1,13 +1,13 @@
-{% set version = "3.2b" %}
-{% set sha256 = "c15fce7ad75f4bfe40311174ae7f5124705cd44c7f807c3222b8bd4f7b9d6058" %}
-{% set tag = "e156c1cb6caa99ec780b71c4baa0b01e91f98288" %}
+{% set version = "3.4b" %}
+{% set sha256 = "ce09334b9a009eb72b211458686184f534b4ef58a7043af8fd261d8fec82cddd" %}
+{% set tag = "c56cee9a8f161817efd94cfcd2393c511a64fc2d" %}
 
 package:
   name: qdoas
   version: {{ version }} 
 
 source:
-  url: https://github.com/svniemeijer/QDOAS/archive/{{ tag }}.zip
+  url: https://github.com/UVVIS-BIRA-IASB/qdoas/archive/{{ tag }}.zip
   sha256: {{ sha256 }}
 
 app:
