@@ -1,0 +1,20 @@
+{% set version = "2.20" %}
+{% set tag = version %}
+
+package:
+  name: hdfeos2
+  version: {{ version }} 
+
+source:
+  path: hdfeos
+
+requirements:
+  build:
+    - cmake
+    - hdf4
+
+  run:
+    - hdf4
+
+about:
+  home: https://www.hdfeos.org/software/
