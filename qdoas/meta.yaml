@@ -50,6 +50,6 @@ requirements:
     - qwt
 
 about:
-  home: https://github.com/UV-VIS-BIRA-IASB/QDOAS
+  home: https://github.com/UVVIS-BIRA-IASB/qdoas
   license: GPL
   license_file: LICENSE
