@@ -7,11 +7,6 @@ cmake ^
   -DJPEG_INCLUDE_DIR="%CONDA_PREFIX%\Library\include" ^
   -DHDF4_INCLUDE_DIR="%CONDA_PREFIX%\Library\include" ^
   -DHDF5_INCLUDE_DIR="%CONDA_PREFIX%\Library\include" ^
-  -DCODA_LIBRARY_DIR="%CONDA_PREFIX%\Library\libs" ^
-  -DJPEG_LIBRARY_DIR="%CONDA_PREFIX%\Library\libs" ^
-  -DHDF4_LIBRARY_DIR="%CONDA_PREFIX%\Library\libs" ^
-  -DHDF5_LIBRARY_DIR="%CONDA_PREFIX%\Library\libs" ^
-  -DZLIB_LIBRARY_DIR="%CONDA_PREFIX%\Library\libs" ^
   -DCMAKE_INSTALL_PREFIX:PATH=%CONDA_PREFIX%
 if errorlevel 1 exit 1
 
