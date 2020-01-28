@@ -1,0 +1,32 @@
+{% set version = "1.1" %}
+{% set sha256 = "f52b1d10e5f5e41a4eff3f40ad609146033880a4594f2ba83492a344985bbce1" %}
+{% set tag = version %}
+
+package:
+  name: legato
+  version: {{ version }} 
+
+source:
+  url: https://github.com/stcorp/legato/archive/{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  noarch: python
+
+requirements:
+  build:
+    - python
+    - pyyaml
+    - schedule
+    - watchdog
+
+  run:
+    - python
+    - pyyaml
+    - schedule
+    - watchdog
+
+about:
+  home: https://github.com/stcorp/legato
+  license: BSD
+  license_file: COPYING

@@ -1,0 +1,26 @@
+{% set version = "0.6.0" %}
+{% set sha256 = "3c4e404812f168b5796f174d7db84fa7d0b780e9cff4edd87aa028f0fec8ca86" %}
+{% set tag = version %}
+
+package:
+  name: schedule
+  version: {{ version }} 
+
+source:
+  url: https://github.com/dbader/schedule/archive/{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  noarch: python
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+
+about:
+  home: https://github.com/dbader/schedule
+  license: MIT
+  license_file: LICENSE.txt
