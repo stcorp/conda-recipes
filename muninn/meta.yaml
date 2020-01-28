@@ -1,0 +1,31 @@
+{% set version = "4.4" %}
+{% set sha256 = "2b2b942cb318b63329c9662b14bbcdd2d3c4af5b6aa34b4fba9ec13f49ff0f61" %}
+{% set tag = version %}
+
+package:
+  name: muninn
+  version: {{ version }} 
+
+source:
+  url: https://github.com/stcorp/muninn/archive/{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  noarch: python
+
+requirements:
+  build:
+    - python
+
+  run:
+    - libspatialite
+    - psycopg2
+    - python
+    - requests
+    - tqdm
+    - tabulate
+
+about:
+  home: https://github.com/stcorp/muninn
+  license: BSD
+  license_file: COPYING
