@@ -1,6 +1,6 @@
-{% set version = "3.4b" %}
-{% set sha256 = "ce09334b9a009eb72b211458686184f534b4ef58a7043af8fd261d8fec82cddd" %}
-{% set tag = "c56cee9a8f161817efd94cfcd2393c511a64fc2d" %}
+{% set version = "3.4" %}
+{% set sha256 = "e82e5ac064855dff04efb1239790b62bb4d73cce36cbafd9de4e3670525d6e74" %}
+{% set tag = version %}
 
 package:
   name: qdoas
