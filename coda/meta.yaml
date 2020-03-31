@@ -13,9 +13,6 @@ source:
 requirements:
   build:
     - cmake
-    - autoconf  # [not win]
-    - automake  # [not win]
-    - libtool  # [not win]
     - bison  # [not win]
     - flex  # [not win]
     - m2-bison  # [win]
